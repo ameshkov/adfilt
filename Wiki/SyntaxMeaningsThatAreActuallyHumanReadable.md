@@ -27,13 +27,13 @@
 * `:has-text`: Same as `:-abp-contains`.
 * `:has`: Same as `:-abp-has`.
 * `!#if`: Specifies that a section of entries only applies to specific platforms or extensions. Closed out by `!#endif`.
+* `!#include`: Embeds another filterlist that is hosted on the same domain (with numerous restrictions).
+* `$important`: Makes a resource-blocking entry take precedence over another whitelisting entry.
 
 ### Nano Adblocker and uBlock Origin only:
 
-* `!#include`: Embeds another filterlist that is hosted on the same domain (with numerous restrictions).
 * `##+js`: Invokes a script that is embedded in those extensions, and usually using the script to modify a value on the site.
 * `:xpath`: An entry written with the very advanced Xpath syntax.
-* `$important`: Makes a resource-blocking entry take precedence over another whitelisting entry.
 * `127.0.0.1` / `0.0.0.0` / `::1`: Used by "*hosts*" system files to signify that network requests to such a domain shall be redirected to a local-only IP address, thus preventing it from loading. Nano and uBO treats it the same as `||`.
 
 #### I can't remember what these ones do:
